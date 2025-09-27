@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex ¡atrapalos a todos!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <div class="pokedex">
+        <header class="pokedex__header">
+            <h1 class="pokedex__title">
+                
+                <img class="pokedex__logo" src="https://logodownload.org/wp-content/uploads/2017/08/pokemon-logo-8.png" alt="Logo de Pokémon">
+                
+                <img class="pokedex__icon" src="https://www.pngall.com/wp-content/uploads/4/Pokeball-PNG-Free-Download.png" alt="Icono de Pokéball">
+            </h1>
+            
+            <h2 class="pokedex__subtitle">Pokédex ¡atrapalos a todos!</h2>
+            
+            <form class="search-bar" id="search-form">
+                <input class="search-bar__input" id="search-input" type="text" placeholder="Buscar por nombre o ID">
+                <button class="search-bar__button" type="submit">Buscar</button>
+            </form>
+            
+            <button class="pokedex__load-button" id="load-initial-btn">Cargar Pokémon Iniciales</button>
+        </header>
+
+        <main class="pokedex__content">
+            
+            <section class="pokemon-display">
+                <h2 class="pokemon-display__title">Resultados</h2>
+                <div class="pokemon-display__container" id="pokemon-display-container">
+                    </div>
+            </section>
+            
+            <hr class="pokedex__separator">
+
+            <section class="favorites">
+                <h2 class="favorites__title">Mis Favoritos</h2>
+                <div class="favorites__container" id="favorites-container">
+                    </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
